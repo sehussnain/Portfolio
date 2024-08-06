@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Hussnain - Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+    <a class="navbar-brand" href="#">Ali Hussnain</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section id="home">
+    <div class="text-light container-fluid text-center feature-image">
+      <div class="scroller">
+        <img src="./image1.jpg" alt="">
+      </div>
+      <h1>Welcome to My Portfolio</h1>
+      <p class="lead">I am Ali Hussnain, a Software Engineer passionate about creating amazing web applications.</p>
+    </div>
+  </section>
+
+
+  <section id="services" class="py-5">
+    <h1 class="text-center pb-1">Services</h1>
+    <div class="container skills">
+      <div class="card m-0">
+        <img src="html-icon.jfif" width="100px" alt="HTML Icon">
+        <div class="card-body">
+          <h5 class="card-title">HTML</h5>
+          <p class="card-text">I am proficient in HTML, with knowledge up to 80%. I have created a project for an online watch store with the help of HTML.</p>
+        </div>
+      </div>
+      <div class="card m-0">
+        <img src="css-icon.png" width="100px" alt="CSS Icon">
+        <div class="card-body">
+          <h5 class="card-title">CSS</h5>
+          <p class="card-text">I have a solid understanding of CSS, with knowledge up to 70%. I have applied my CSS skills in various projects.</p>
+        </div>
+      </div>
+      <div class="card m-0">
+        <img src="bootstrap-icon.jfif" width="100px" alt="Bootstrap Icon">
+        <div class="card-body">
+          <h5 class="card-title">Bootstrap</h5>
+          <p class="card-text">I have experience with Bootstrap, with proficiency ranging from 65% to 70%. It help  to ensure responsive design and a polished, professional look..</p>
+        </div>
+      </div>
+      <div class="card m-0">
+        <img src="js-icon.png" width="100px" alt="JavaScript Icon">
+        <div class="card-body">
+          <h5 class="card-title">JavaScript</h5>
+          <p class="card-text">I have a basic knowledge of JavaScript, which I have used to add interactive features to my projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="about" class="about section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4">
+        <div class="col-md-6">
+
+          <div class="row justify-content-between gy-4">
+            <div class="col-lg-5">
+              <img src="profile.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-7 about-info">
+              <p><strong>Name: </strong> <span>Ali Hussnain</span></p>
+              <p><strong>Profile: </strong> <span>Web Developer</span></p>
+              <p><strong>Email: </strong> <span>alihusssnain.628@gmail.com</span></p>
+              <p><strong>Phone: </strong> <span> 03401748628</span></p>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-md-6">
+          <div class="about-me">
+            <h4>About me</h4>
+            <p>
+             
+
+
+I'm Ali Hussnain, a passionate front-end developer dedicated to creating stunning, responsive websites that not only look great but provide an excellent user experience. With a strong foundation in HTML, CSS, Bootstrap, and JavaScript, I specialize in building user-friendly web applications that are both functional and visually appealing
+            </p>
+            <p>
+              I believe in the power of design to transform ideas into digital realities, and I take pride in every detail, from the initial concept to the final deployment. My approach combines creativity with technical expertise, allowing me to craft solutions that meet the unique needs of each project.
+            </p>
+            <p>
+              Explore my portfolio to see a selection of projects that showcase my commitment to quality and my passion for front-end development. I'm excited to share my work with you and look forward to the opportunity to collaborate on future projects!
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="contact" class="pt-5">
+    <h2 class="text-dark text-center">Contact Me</h2>
+    <form method="post" onsubmit="sendMail(event)" class="row mx-5 pb-3" style="flex-direction: column;">
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="HUssnain">
+      </div>
+      <div class="mb-3">
+        <label for="subject" class="form-label">Subject</label>
+        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject Here">
+      </div>
+      <div class="mb-3">
+        <label for="desription" class="form-label">Description</label>
+        <textarea class="form-control" id="desription" name="desription" rows="3"></textarea>
+      </div>
+      <div style="width: fit-content; align-self: flex-end;">
+        <a href="./users.html">View users</a>
+        <button class="btn btn-primary">Send</button>
+      </div>
+    </form>
+    <div class="container-fluid pt-2" style="background-color: black;">
+      <div class="row">
+        <div class="col text-center text-light">
+          <p>Email: alihusssnain.628gmail.com.com<br>Phone: 03401748628</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="styles.js"></script>
+</body>
+
+</html>
